@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>822 by rtv</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>CMPT882 Distributed Robot Systems</h1>
+        <p>Graduate seminar class on distributed autonomous systems</p>
+
+        <p class="view"><a href="https://github.com/rtv/822">View the Project on GitHub <small>rtv/822</small></a></p>
+
+      </header>
+
+
+      <section>
+
+
+<h2>Project Ideas</h2>
+
+<p>All these ideas build on work discussed in class, and are least partially novel. The Litus and Lein papers were based on work done in this class.
+
+<ul>
+<li>Joint recharging decisions: show that robots can achieve more discounted work if they jointly decide their battery threshold to go recharge, compared to any fixed threshold. See [Berenz:2012] for a single robot model.
+
+<li>Distributed simultaneous task allocation & navigation: Can you modify the LOST framework to do optimal load balancing between multiple food sources? 
+  Possible approaches:
+  <ul>
+    <li>Add additional information to the crumb cost label.
+   <li>Use a FASR-type method to change a robot's choice of which trail to use.
+  </ul>
+<li>Adaptive spatial interference reduction: can you get a robot population to adaptively switch between individual foraging and bucket-brigading depending on the current spatial interference? See [Lein:2009] for a partial solution.
+
+<li>FLOST: Investigate adding flocking behaviour to LOST robots, in addition to obstacle avoidance. Can you reduce spatial interference and terrain coverage to find better trails?
+
+<!-- <li>Energy-aware foraging: investigate the 
+-->
+
+<li>Daydream LOST: Can a robot build a world model online, then simulate LOST in the model to find efficient paths without spending all that energy in the real world?
+
+<li>Reinforcement learning for local obstacle avoidance with cooperating (and possibly uncooperating?) dynamic obstacles. Can you learn a control policy from sensor data that beats RVO?
+
+<li>Ordering strategies in the Frugal Feeding Problem: devise and evaluate distributed heuristics for choosing the order of individual rendezvous in the FFP. See [Litus:2007]
+
+<li>Pheromone Robotics: In [Payton:2001] Pheromone robots deploy themselves as stationary graph nodes. If we allow nodes to continue moving, could we usefully combine Payton's exploration functionality with formation control? 
+
+<li>Robot sheepdog teams: devise novel control algorithms for multiple robot sheepdogs to move a flock around an obstacle course. Ideally, the methods would scale to any number of sheepdogs >= 3 and any number of flock creatures. 
+
+<li>Multi-robot area coverage with fractal trajectories: extend [Sadat:2015] to multiple robots.
+
+<li>Decentralize Amazon's Kiva robots. Devise a distributed algorithm that addresses the Kiva planning problem, and competes with a centralized planning approach. <a href="https://vimeo.com/113374910">Video</a>. This application is very important with lots of <a href="http://spectrum.ieee.org/automaton/robotics/industrial-robots/locus-robotics-warehouse-automation-robots">players in the space</a>.
+
+<li> Cooperative manipulation: Can you extend Lily's recent work on light-field controlled robots to transport large objects? See <a href="https://github.com/rtv/push">Push code at GitHub</a>.
+
+</ul>
+
+
+
+<h2>References</h2>
+<ul>
+<li>[Berenz:2012] Autonomous battery management for mobile robots based on risk and gain assessment. Berenz, V., Tanaka, F. & Suzuki, K. Artif Intell Rev (2012) 37: 217. doi:10.1007/s10462-011-9227-9. <a href="http://link.springer.com/article/10.1007/s10462-011-9227-9">ONLINE</a>
+
+<li>[Lein:2009] Adapting to non-uniform resource distributions in robotic swarm foraging through work-site relocation. Adam Lein, Richard Vaughan.
+Proc. IEEE Int. Conf. on Intelligent Robots and Systems (IROS'09), St. Loius, MO October 2009. <a href="https://autonomylab.github.io/doc/lein_iros09.pdf">PDF</a>
+
+<li>[Litus:2007] The Frugal Feeding Problem: Energy-efficient, multi-robot, multi-place rendezvous.Yaroslav Litus, Richard Vaughan, Pawel Zebrowski.
+Proc. IEEE Int. Conf. on Robotics and Automation, April 2007. <a href="https://autonomylab.github.io/doc/litus_icra07.pdf">PDF</a>
+
+
+<li>[Payton:2001] David Payton , Regina Estkowski , Mike Howard Compound Behaviors in Pheromone Robotics Robotics and Autonomous Systems, 2001, 44, pp.229--240. <a href="https://www.cs.sfu.ca/~vaughan/teaching/415/papers/Payton%202001b.pdf">PDF</a>
+
+<li>[Sadat:2015] Fractal Trajectories for Online Non-Uniform Aerial Coverage 
+Seyed Abbas Sadat, Jens Wawerla, Richard Vaughan.
+Proc. IEEE Int. Conf. on Robotics and Automation (ICRA'15), Seattle, USA May 2015  <a href="https://autonomylab.github.io/doc/sadat_icra15.pdf">PDF</a>
+ </body>
+</html>
