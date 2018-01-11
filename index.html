@@ -20,6 +20,9 @@
 
 	<p><a href="projects.html">Ideas for class projects</a>
 
+	<p><a href="https://github.com/rtv/Stage">Stage at GitHub</a>
+	 <br><a href="http://rtv.github.io/Stage/">Stage docs</a>
+	  
         <p class="view"><a href="https://github.com/rtv/822">View the Project on GitHub <small>rtv/822</small></a></p>
 
 <!--
@@ -66,6 +69,54 @@ Students will understand:
 <li> project: implement and experiment with a multi-robot system or sensor network in simulation (or on real hardware if available)
 </ul>
 
+<h2>Programming homework - Demo on Wed 24 Jan</h2>
+<ul>
+  <li>Download and run the Stage robot simulator
+  <li>Examine the simple.world / wander.c and fasr.world - fasr.c controller code
+  <li>Modify the code and world to do produce some interesting robot behaviour. Choose an idea from the list or come up with your own.
+    <p>Ideas in approximate order of difficulty
+      <ul>
+	<li>Spread out all robots maximally in the environment (like in benchmarks/hospital.world)
+	<li>Follow walls closely to one side nice and smoothly
+	<li>Have four robots follow each other nicely like train carriages
+	<li>In FASR, decide when to charge more efficiently than a fixed threshold
+	<li>Have one robot evade and one robot chase it
+	<li>Have all robots meet at one fixed location
+	<li>Have all robots meet at the location announced by one robot
+	<li>Playing tag 
+	<li>Playing hide and seek (find a good place to stay still)
+	<li>Explore the whole world (ie. see all walls)
+	<li>Clean the whole floor (ie. drive over all the floor, like Roomba)
+	<li>Implement LOST (see paper below)
+	<li>Queue nicely for charging stations
+	<li>Have all robots meet at one efficient location 
+      </ul>
+      <li>Prepare a 5 minute demo to the class explaining your new system. Explain:
+	<ul>
+	  <li>What it does and how it works
+	  <li>What was difficult and what was easy, and any other interesting things you learned
+	</ul>
+</ul>
+</ul>
+
+	   
+ 
+<h2>Project: multi-robot system in simulation.</h2>
+
+<p>Implement an existing idea or - better - an extension of prior work or a novel idea, in simulation, and perform experiments to evaluate it.
+  
+  <ul>
+    <li>Describe project proposal to class 21 February (after reading break)
+    <li>Demo to class in last week of class
+    <li>Write a 6 page conference-style paper, due 13 April.
+ </ul>   
+
+
+  <h2>Presention schedule</h2>
+
+<p>Every student will present one paper from the reading list to the class, and lead a discussion about it. The schedule will appear here, following discussion in class on 24 Jan.
+
+  
 <h2>Reading List</h2>
 
 <h3>Week 1: embodied distributed concensus with robots greatest hits</h3>
@@ -77,26 +128,10 @@ Students will understand:
 Leslie Lamport, <i>Time, clocks and the ordering of events in a distributed system</i>,  Communications of the ACM 21, 7   (July 1978), 558-565. 
 <a href=" http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf">PDF</a>
 
-<li>Michael Rubenstein, Alejandro Cornejo, Radhika Nagpal, <i>
-Programmable Self-Assembly in a Thousand-Robot Swarm</i>
-Science, Vol 345, no 6198, 15 Aug 2014 <a href="http://www.sciencemag.org/cgi/rapidpdf/345/6198/795?ijkey=6HDqxr.PcBD7o&keytype=ref&siteid=sci">Link to fetch "Open" copy</a>.
-
-<li>Edwin Olson, Johannes Strom, Ryan Morton, Andrew Richardson, Pradeep Ranganathan,  Robert Goeddel, Mihai Bulic, Jacob Crossman and Bob Marinier, <i>Progress towards multi-robot reconnaissance and the MAGIC 2010 Competition</i> Journal of Field Robotics,  29:5, pp.762--792, September 2012,
-<a href="https://april.eecs.umich.edu/media/pdfs/olson2012jfr.pdf">PDF</a>.
-
-<li>David Payton , Regina Estkowski , Mike Howard<i>
-Compound Behaviors in Pheromone Robotics</i>
-Robotics and Autonomous Systems, 2001, 44, pp.229--240. <a href="https://www.cs.sfu.ca/~vaughan/teaching/415/papers/Payton%202001b.pdf
-">PDF</a>
 
 <li>Andrew Howard, Maja J. Matarić and Gaurav S. Sukhatme. "An Incremental Self-Deployment Algorithm for Mobile Sensor Networks". In Autonomous Robots Special Issue on Intelligent Embedded Systems, 13(2):113-126, 2002. 
 	<a href="http://robotics.usc.edu/publications/41/>USC page</a> <a href="http://robotics.usc.edu/publications/downloads/pub/41/">PDF</a>	
 	
-<li> Yaroslav Litus, Richard Vaughan, Pawel Zebrowski.<i>
-The Frugal Feeding Problem: Energy-efficient, multi-robot, multi-place rendezvous </i>
-Proc. IEEE Int. Conf. on Robotics and Automation, April 2007 PDF
-<a href="http://autonomylab.github.io/doc/litus_icra07.pdf">PDF</a>
-
 <li>Richard Vaughan, <i>
 Massively Multi-Robot Simulations in Stage</i>,Swarm Intelligence 2 (2-4) :189-208 December 2008 <a href="http://autonomylab.github.io/doc/vaughan_si08.pdf">PDF</a>
 
@@ -110,9 +145,7 @@ Massively Multi-Robot Simulations in Stage</i>,Swarm Intelligence 2 (2-4) :189-2
 M. Dorigo ; V. Maniezzo ; A. Colorni, Ant system: optimization by a
 colony of cooperating agents.  IEEE Transactions on Systems, Man, and
 Cybernetics, Part B (Cybernetics) ( Volume: 26, Issue: 1, Feb 1996 )
-<a href="http://www.cs.unibo.it/babaoglu/courses/cas05-06/tutorials/Ant_Colony_Optimization.pdf">PDF</a>
-
-<p><a href="http://iridia.ulb.ac.be/~mdorigo/HomePageDorigo/">Marco Dorigo's web site.</a>
+<a href="http://www.cs.unibo.it/babaoglu/courses/cas05-06/tutorials/Ant_Colony_Optimization.pdf">PDF</a> <a href="http://iridia.ulb.ac.be/~mdorigo/HomePageDorigo/">Marco Dorigo's web site.</a>
 
 <li>Mayet, Ralf, et al. "Antbots: A feasible visual emulation of pheromone trails for swarm robots." International Conference on Swarm Intelligence. Springer Berlin Heidelberg, 2010. <a href="http://zool33.uni-graz.at/artlife/sites/default/files/mayet_antbots.pdf">PDF</a>
 
@@ -150,6 +183,11 @@ Conference on Computer and Robot Vision, (CRV'17), Edmonton, AB, Canada , May 20
 <h3>Week 3: Energy management</h3>
 
 <ol>
+<li> Yaroslav Litus, Richard Vaughan, Pawel Zebrowski.<i>
+The Frugal Feeding Problem: Energy-efficient, multi-robot, multi-place rendezvous </i>
+Proc. IEEE Int. Conf. on Robotics and Automation, April 2007 PDF
+<a href="http://autonomylab.github.io/doc/litus_icra07.pdf">PDF</a>
+
 </ol>
 
 <h3>Week 4: Collective manipulation</h3>
@@ -161,6 +199,18 @@ Conference on Computer and Robot Vision, (CRV'17), Edmonton, AB, Canada , May 20
 <h3>Week 5: Formation control &amp task allocation</h3>
 
 <ol>
+
+<li>Michael Rubenstein, Alejandro Cornejo, Radhika Nagpal, <i>
+Programmable Self-Assembly in a Thousand-Robot Swarm</i>
+Science, Vol 345, no 6198, 15 Aug 2014 <a href="http://www.sciencemag.org/cgi/rapidpdf/345/6198/795?ijkey=6HDqxr.PcBD7o&keytype=ref&siteid=sci">Link to fetch "Open" copy</a>.
+
+<li>Edwin Olson, Johannes Strom, Ryan Morton, Andrew Richardson, Pradeep Ranganathan,  Robert Goeddel, Mihai Bulic, Jacob Crossman and Bob Marinier, <i>Progress towards multi-robot reconnaissance and the MAGIC 2010 Competition</i> Journal of Field Robotics,  29:5, pp.762--792, September 2012,
+<a href="https://april.eecs.umich.edu/media/pdfs/olson2012jfr.pdf">PDF</a>.
+
+<li>David Payton , Regina Estkowski , Mike Howard<i>
+Compound Behaviors in Pheromone Robotics</i>
+Robotics and Autonomous Systems, 2001, 44, pp.229--240. <a href="https://www.cs.sfu.ca/~vaughan/teaching/415/papers/Payton%202001b.pdf
+">PDF</a>
 
   <li><b>All time classic</b>
     Craig W. Reynolds
